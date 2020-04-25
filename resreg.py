@@ -1831,8 +1831,8 @@ class Rebagg():
         
         Examples
         ----------
-        y_pred = rebagg.predict(X_test)
-        pred_std = rebagg.pred_std  # Standard deviation of predictions
+        >>> y_pred = rebagg.predict(X_test)
+        >>> pred_std = rebagg.pred_std  # Standard deviation of predictions
         """
         if not self._isfitted:
             raise ValueError('Rebagg ensemble has not yet been fitted to training data.')
